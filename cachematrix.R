@@ -1,8 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## makeCacheMatrix is a function that converts a matrix in an object that can cache its inverse
-## we first create a space for the inverse and set in to NULL; then we store the matrix and its inverse into the global environment
+## makeCacheMatrix is a function that converts a matrix in an object that can cache its inverse if it exists
+## we first create a space for the inverse and set in to NULL; then we store the matrix and its inverse in the parent environment of the function
+## we return a list of all the values created.
 
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
